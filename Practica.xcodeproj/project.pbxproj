@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C382B7527DC182A00B65A0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C382B7327DC182A00B65A0B /* Main.storyboard */; };
+		3C54128527E2A717004D5439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C54128327E2A717004D5439 /* Main.storyboard */; };
 		3C86439727DD0D6E008F5FA3 /* TablaDinamicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C86439627DD0D6E008F5FA3 /* TablaDinamicaViewController.swift */; };
 		3C86439A27DD1C37008F5FA3 /* MiCeldaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C86439827DD1C36008F5FA3 /* MiCeldaTableViewCell.swift */; };
 		3C86439B27DD1C37008F5FA3 /* MiCeldaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C86439927DD1C37008F5FA3 /* MiCeldaTableViewCell.xib */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C382B7427DC182A00B65A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C54128427E2A717004D5439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C86439627DD0D6E008F5FA3 /* TablaDinamicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaDinamicaViewController.swift; sourceTree = "<group>"; };
 		3C86439827DD1C36008F5FA3 /* MiCeldaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCeldaTableViewCell.swift; sourceTree = "<group>"; };
 		3C86439927DD1C37008F5FA3 /* MiCeldaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiCeldaTableViewCell.xib; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 		3CFFFBE327D3B95C0075D41F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C54128327E2A717004D5439 /* Main.storyboard */,
 				3CFFFBD427D3B8740075D41F /* LaunchScreen.storyboard */,
-				3C382B7327DC182A00B65A0B /* Main.storyboard */,
 				3C86439827DD1C36008F5FA3 /* MiCeldaTableViewCell.swift */,
 				3C86439927DD1C37008F5FA3 /* MiCeldaTableViewCell.xib */,
 			);
@@ -166,10 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C382B7527DC182A00B65A0B /* Main.storyboard in Resources */,
 				3CFFFBD627D3B8740075D41F /* LaunchScreen.storyboard in Resources */,
 				3CFFFBD327D3B8740075D41F /* Assets.xcassets in Resources */,
 				3C86439B27DD1C37008F5FA3 /* MiCeldaTableViewCell.xib in Resources */,
+				3C54128527E2A717004D5439 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +191,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C382B7327DC182A00B65A0B /* Main.storyboard */ = {
+		3C54128327E2A717004D5439 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3C382B7427DC182A00B65A0B /* Base */,
+				3C54128427E2A717004D5439 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

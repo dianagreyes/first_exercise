@@ -123,6 +123,14 @@
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPU-E1-vEt">
+                                        <rect key="frame" x="144" y="540.5" width="107" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Nuevo botón"/>
+                                        <connections>
+                                            <segue destination="voU-cu-yTN" kind="show" id="2cW-kZ-sqq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
@@ -139,6 +147,7 @@
                                     <constraint firstItem="Dot-1x-RnI" firstAttribute="top" secondItem="98V-XW-Xmk" secondAttribute="bottom" constant="40" id="H6f-1K-nj6"/>
                                     <constraint firstAttribute="trailing" secondItem="iQ7-5N-tEv" secondAttribute="trailing" constant="20" id="Jen-Ru-BFX"/>
                                     <constraint firstItem="tKk-nD-EV3" firstAttribute="top" secondItem="nLn-tE-uTX" secondAttribute="bottom" constant="20" id="L1F-SO-UWg"/>
+                                    <constraint firstItem="PPU-E1-vEt" firstAttribute="top" secondItem="5SE-vM-EYE" secondAttribute="bottom" constant="10" id="Okr-Wz-Fqa"/>
                                     <constraint firstItem="iQ7-5N-tEv" firstAttribute="centerY" secondItem="tKk-nD-EV3" secondAttribute="centerY" id="UuM-Eo-sSV"/>
                                     <constraint firstItem="WkN-RP-K42" firstAttribute="leading" secondItem="5Dq-aV-b6P" secondAttribute="leading" constant="20" id="VJs-S5-nAG"/>
                                     <constraint firstItem="3WF-9N-2wZ" firstAttribute="leading" secondItem="gXE-oK-ZBB" secondAttribute="trailing" constant="20" id="VVw-hW-KdF"/>
@@ -238,6 +247,49 @@
             </objects>
             <point key="canvasLocation" x="1786.9565217391305" y="22.767857142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="TWx-30-wDN">
+            <objects>
+                <viewController id="voU-cu-yTN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u3d-zM-UZz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dz8-V0-1Gd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImagePikachu" translatesAutoresizingMaskIntoConstraints="NO" id="tyR-Lm-moD">
+                                        <rect key="frame" x="87" y="395" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pantalla del nuevo botón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjA-J9-oBh">
+                                        <rect key="frame" x="113.5" y="156" width="187" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="yjA-J9-oBh" firstAttribute="centerX" secondItem="dz8-V0-1Gd" secondAttribute="centerX" id="hh5-Xx-Hcq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ffC-OI-Dox"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ffC-OI-Dox" firstAttribute="bottom" secondItem="dz8-V0-1Gd" secondAttribute="bottom" id="6bl-kQ-pS1"/>
+                            <constraint firstItem="ffC-OI-Dox" firstAttribute="trailing" secondItem="dz8-V0-1Gd" secondAttribute="trailing" id="9Ux-4r-NSU"/>
+                            <constraint firstItem="dz8-V0-1Gd" firstAttribute="leading" secondItem="ffC-OI-Dox" secondAttribute="leading" id="Cg2-xp-no5"/>
+                            <constraint firstItem="dz8-V0-1Gd" firstAttribute="top" secondItem="ffC-OI-Dox" secondAttribute="top" id="dmL-Da-6a4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GjX-8D-8o4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMq-Mj-HiS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346" y="801"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="blB-b0-Ax2">
             <objects>
@@ -258,6 +310,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ImagePikachu" width="400" height="400"/>
         <image name="User" width="1120" height="1120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
